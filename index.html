@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankalp Shant | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .gradient-text { background: linear-gradient(to right, #6366f1, #a855f7);background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-end items-center">
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-indigo-600 transition">Home</a>
+                <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+                <a href="#experience" class="hover:text-indigo-600 transition">Experience</a>
+                <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-indigo-600 font-semibold tracking-wide uppercase mb-2">Welcome to my portfolio</h2>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">I'm <span class="gradient-text">Sankalp Shant</span></h1>
+                <p class="text-xl text-slate-600 mb-8 leading-relaxed">
+                    Aspiring Data Scientist & Software Developer. Specialist in <b>Data Analysis, Model Training, and Feature Engineering</b> with a strong foundation in Machine Learning and Deep Learning.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">View Projects</a>
+                    <a href="#contact" class="px-8 py-3 border border-indigo-600 text-indigo-600 rounded-full font-medium hover:bg-indigo-50 transition">Contact Me</a>
+                </div>
+            </div>
+            <div class="relative" data-aos="fade-left">
+                <div class="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                    <img src="profile.jpeg" alt="Sankalp Shant" class="w-full h-full object-cover bg-slate-200">
+                </div>
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                        I am a final-year Computer Science student passionate about the intersection of Software Engineering and Data Science. I enjoy building real-world solutions—from AI legal assistants to IoT monitoring systems.
+                    </p>
+                    <div class="p-6 bg-indigo-50 rounded-2xl border-l-4 border-indigo-600">
+                        <p class="font-semibold text-indigo-900">Goal:</p>
+                        <p class="text-indigo-700">To leverage my skills in ML, Deep Learning, and Web Development as a Software Development or Data Science Intern.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-4">Education</h3>
+                    <div class="space-y-6">
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-indigo-600 rounded-full"></div>
+                            <p class="font-bold text-slate-800">B.E. Computer Science</p>
+                            <p class="text-sm text-slate-500">AMC Engineering College | GPA: 6.33/10</p>
+                            <p class="text-xs text-indigo-600">Jan '22 — Present</p>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-slate-300 rounded-full"></div>
+                            <p class="font-bold text-slate-800">Class XII</p>
+                            <p class="text-sm text-slate-500">Gaurav Memorial International School | 70%</p>
+                            <p class="text-xs text-slate-600">Jun '20 — Jun '21</p>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-slate-300 rounded-full"></div>
+                            <p class="font-bold text-slate-800">Class X</p>
+                            <p class="text-sm text-slate-500">S.D.S. School | 72%</p>
+                            <p class="text-xs text-slate-600">May '18 — Jun '19</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-16" data-aos="fade-up">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="p-8 bg-white rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition" data-aos="zoom-in">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 mx-auto text-2xl">💻</div>
+                    <h3 class="font-bold mb-4">Languages</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">Python</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">Java</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">C++</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">C</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">JavaScript</span>
+                    </div>
+                </div>
+                <div class="p-8 bg-white rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-6 mx-auto text-2xl">🌐</div>
+                    <h3 class="font-bold mb-4">Web Dev</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">HTML</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">CSS</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">React.js</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">Node.js</span>
+                    </div>
+                </div>
+                <div class="p-8 bg-white rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-6 mx-auto text-2xl">🗄️</div>
+                    <h3 class="font-bold mb-4">Database & Tools</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">SQL</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">MySQL</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">Git</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">VSCode</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">Raspberry Pi</span>
+                    </div>
+                </div>
+                <div class="p-8 bg-white rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-lg flex items-center justify-center mb-6 mx-auto text-2xl">🧠</div>
+                    <h3 class="font-bold mb-4">Concepts</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">OOP</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">Data Structures</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">REST APIs</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-medium">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-white px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-16" data-aos="fade-up">Experience</h2>
+            <div class="text-left p-8 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <h3 class="text-2xl font-bold text-slate-800">Software Intern</h3>
+                    <span class="text-indigo-600 font-medium">Feb '26 — Jun '26</span>
+                </div>
+                <p class="text-lg font-semibold text-slate-700 mb-2">Edutainer | <span class="font-normal text-slate-500">Remote, India</span></p>
+                <p class="text-slate-600 leading-relaxed">Currently pursuing this internship, focusing on frontend development, app development, and strengthening foundations in Data Structures and Algorithms (DSA).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-slate-100 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-16" data-aos="fade-up">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 text-left" data-aos="fade-up">
+                    <div class="h-48 bg-indigo-600 flex items-center justify-center text-white text-4xl font-bold">⚖️</div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3">NyayaSahayak (AI Legal Assistant)</h3>
+                        <p class="text-slate-600 mb-6">An AI-powered guidance platform focused on Indian laws to help low-income citizens.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-bold px-2 py-1 bg-indigo-50 text-indigo-600 rounded">ML Pipelines</span>
+                            <span class="text-xs font-bold px-2 py-1 bg-indigo-50 text-indigo-600 rounded">Deep Learning</span>
+                            <span class="text-xs font-bold px-2 py-1 bg-indigo-50 text-indigo-600 rounded">RESTful APIs</span>
+                        </div>
+                        <button onclick="openProject('nyaya')" class="inline-flex items-center text-indigo-600 font-semibold hover:underline cursor-pointer">Learn More →</button>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 text-left" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-purple-600 flex items-center justify-center text-white text-4xl font-bold">👶</div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3">Baby Monitoring System</h3>
+                        <p class="text-slate-600 mb-6">An IoT solution for real-time monitoring using Raspberry Pi and sound/motion detection.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-bold px-2 py-1 bg-purple-50 text-purple-600 rounded">Raspberry Pi</span>
+                            <span class="text-xs font-bold px-2 py-1 bg-purple-50 text-purple-600 rounded">IoT</span>
+                            <span class="text-xs font-bold px-2 py-1 bg-purple-50 text-purple-600 rounded">Data Analysis</span>
+                        </div>
+                        <button onclick="openProject('baby')" class="inline-flex items-center text-purple-600 font-semibold hover:underline cursor-pointer">Learn More →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certs" class="py-24 bg-white px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-16" data-aos="fade-up">Certifications & Volunteering</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-indigo-300 transition" data-aos="fade-up">
+                    <p class="font-bold text-slate-800">Android Developer Virtual Internship</p>
+                    <p class="text-sm text-indigo-600 font-medium">AICTE | Apr '25</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-indigo-300 transition" data-aos="fade-up" data-aos-delay="100">
+                    <p class="font-bold text-slate-800">Build your own Chatbot using Python</p>
+                    <p class="text-sm text-indigo-600 font-medium">Certification | Feb '25</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-indigo-300 transition" data-aos="fade-up" data-aos-delay="200">
+                    <p class="font-bold text-slate-800">AI Digital Marketing</p>
+                    <p class="text-sm text-indigo-600 font-medium">Certification | Mar '25</p>
+                </div>
+            </div>
+            <div class="max-w-2xl mx-auto p-6 bg-indigo-50 rounded-3xl border border-indigo-100" data-aos="fade-up">
+                <h3 class="font-bold text-indigo-900 mb-2">Volunteering</h3>
+                <p class="text-indigo-700">Technical Support at Hackathon, AMC Engineering College (Mar '24)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-50 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-16" data-aos="fade-up">Get In Touch</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-left" data-aos="fade-right">
+                    <p class="text-lg text-slate-600 mb-8">I am currently open for internship opportunities. Feel free to reach out!</p>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 bg-white shadow-sm rounded-full flex items-center justify-center text-indigo-600">📧</div>
+                        <p class="font-medium">shantsankalp0@gmail.com</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-white shadow-sm rounded-full flex items-center justify-center text-indigo-600">📍</div>
+                        <p class="font-medium">Kanpur, India</p>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/mwvazaoe" method="POST" class="space-y-4" data-aos="fade-left">
+                    <input type="text" name="name" required placeholder="Your Name" class="w-full px-6 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                    <input type="email" name="email" required placeholder="Your Email" class="w-full px-6 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+                    <textarea name="message" required placeholder="Your Message" rows="4" class="w-full px-6 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"></textarea>
+                    <button type="submit" class="w-full py-4 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-slate-200 bg-white">
+        <p class="text-slate-500">&copy; 2026 Sankalp Shant. Built with Tailwind CSS.</p>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="projectModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity duration-300">
+        <div class="bg-white w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-3xl shadow-2xl relative" data-aos="zoom-in">
+            <button onclick="closeProject()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-600 text-2xl font-bold">&times;</button>
+            <div class="p-8 md:p-12">
+                <div id="modalIcon" class="text-5xl mb-4"></div>
+                <h2 id="modalTitle" class="text-3xl font-bold mb-4"></h2>
+                <div id="modalTech" class="flex flex-wrap gap-2 mb-6"></div>
+                <div class="space-y-6 text-slate-600 leading-relaxed">
+                    <div><h4 class="text-lg font-bold text-slate-800 mb-2">📌 Project Overview</h4><p id="modalDesc"></p></div>
+                    <div><h4 class="text-lg font-bold text-slate-800 mb-2">🚀 How it Works</h4><p id="modalHow"></p></div>
+                    <div><h4 class="text-lg font-bold text-slate-800 mb-2">🛠️ My Contribution</h4><ul id="modalRole" class="list-disc ml-5 space-y-2"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        const projectData = {
+            nyaya: {
+                title: "NyayaSahayak (AI Legal Assistant)",
+                icon: "⚖️",
+                tech: ["HTML/CSS/JS", "ML Pipelines", "Deep Learning", "RESTful APIs", "Feature Engineering"],
+                desc: "An AI-powered legal guidance platform specifically designed to provide Indian laws accessibility to low-income citizens.",
+                how: "Implemented law-type detection and multilingual responses using AI. It integrates legal document generation features and leverages deep learning for intent detection to ensure accuracy.",
+                role: [
+                    "Developed chat-based frontend using HTML, CSS, and JavaScript.",
+                    "Built ML pipelines involving Feature Engineering and Model Training.",
+                    "Performed data analysis on legal queries to improve response relevance.",
+                    "Integrated RESTful APIs for backend communication and multilingual capabilities.",
+                    "Explored Deep Learning techniques for accurate intent detection."
+                ]
+            },
+            baby: {
+                title: "Baby Monitoring System",
+                icon: "👶",
+                tech: ["Raspberry Pi", "IoT", "Python", "Data Analysis"],
+                desc: "A real-time IoT solution for baby safety and health monitoring.",
+                how: "Utilizes Raspberry Pi for real-time motion and sound detection, alerting caregivers instantly via an automated system when discomfort or crying is detected.",
+                role: [
+                    "Built the core IoT-based monitoring solution.",
+                    "Used Raspberry Pi for real-time audio/visual sensory detection.",
+                    "Implemented the alert system for distress/discomfort detection.",
+                    "Processed sensor data using basic Data Analysis techniques to minimize false alerts.",
+                    "Designed real-time alert logic with optimized data handling."
+                ]
+            }
+        };
+
+        function openProject(id) {
+            const data = projectData[id];
+            const modal = document.getElementById('projectModal');
+            document.getElementById('modalTitle').innerText = data.title;
+            document.getElementById('modalIcon').innerText = data.icon;
+            document.getElementById('modalDesc').innerText = data.desc;
+            document.getElementById('modalHow').innerText = data.how;
+            const techContainer = document.getElementById('modalTech');
+            techContainer.innerHTML = '';
+            data.tech.forEach(t => { techContainer.innerHTML += `<span class="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-xs font-bold">${t}</span>`; });
+            const roleContainer = document.getElementById('modalRole');
+            roleContainer.innerHTML = '';
+            data.role.forEach(r => { roleContainer.innerHTML += `<li>${r}</li>`; });
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProject() {
+            const modal = document.getElementById('projectModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target == modal) closeProject();
+        }
+
+        const btn = document.getElementById('menu-btn');
+        const navLinks = document.querySelector('.md\\:flex');
+        btn.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('w-full');
+            navLinks.classList.toggle('bg-white');
+            navLinks.classList.toggle('p-6');
+        });
+    </script>
+</body>
+</html>
